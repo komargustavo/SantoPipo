@@ -143,17 +143,19 @@ h3 {
 .contacto {
   background-color: var(--naranja);
 }
-
 /* Hero */
 .hero {
   background-image: url(../img/Taller-de-orfebre.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+.posicion{
   height: 100vh;
   position: relative;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
-.hero .logo {
+
+.logo {
   position: absolute;
   top: 8px;
   left: 5%;
