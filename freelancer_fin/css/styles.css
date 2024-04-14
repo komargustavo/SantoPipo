@@ -109,12 +109,14 @@ h3 {
 
 /* Navegacion Principal */
 .nav-bg {
+  padding: 25px;
   background-color: var(--secundario);
 }
 .navegacion-principal {
   display: flex;
   flex-direction: column;
 }
+
 @media (min-width: 768px) {
   .navegacion-principal {
     flex-direction: row;
@@ -127,13 +129,19 @@ h3 {
   text-align: center;
   color: var(--blanco);
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  padding: 1rem;
+  padding: 1rem 5rem;
+  border-radius: 10px;
+  /* transition: ease-in, 1s; */
+  transition: all 0.5s ease-in-out;
 }
 .navegacion-principal a:hover {
   background-color: var(--primario);
   color: var(--oscuro);
+}
+.contacto {
+  background-color: var(--naranja);
 }
 
 /* Hero */
@@ -145,11 +153,16 @@ h3 {
   position: relative;
   margin-bottom: 2rem;
 }
+.hero .logo {
+  position: absolute;
+  top: 8px;
+  left: 5%;
+}
 .contenido-hero {
   position: absolute;
   background-color: rgb(0 0 0 / 30%);
   width: 100%;
-  height: 71%;
+  height: 65%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -165,6 +178,25 @@ h3 {
 .contenido-hero h1 span {
   font-weight: 700;
 }
+@media (min-width: 768px) {
+  .contenido-hero h1 {
+    font-size: 6rem;
+    line-height: 7rem;
+    color: var(--naranja);
+    font-weight: 200;
+    font-family: "Cinzel Decorative", serif;
+  }
+  .contenido-hero h1 span {
+    font-weight: 700;
+  }
+  .contenido-hero p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: var(--blanco);
+  }
+  
+}
+
 .contenido-hero p {
   line-height: 3rem;
   color: var(--blanco);
@@ -175,7 +207,7 @@ h3 {
 }
 @media (min-width: 768px) {
   .contenido-hero {
-    height: 93%;
+    height: 85%;
   }
 }
 
