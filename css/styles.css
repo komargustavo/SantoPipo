@@ -106,7 +106,6 @@ h3 {
 .alinear-derecha {
   justify-content: flex-end;
 }
-
 /* Navegacion Principal */
 .nav-bg {
   padding: 25px;
@@ -246,10 +245,24 @@ h3 {
 }
 
 /** Contacto **/
+.seccion{
+position: relative;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+imagen-principal{
+  position: absolute;
+width:  100%;
+  max-height: 100%;
+  }
+
 .formulario {
-  background-color: var(--gris);
+  position:absolute;
+  background-color: rgb(0 0 0 / 30%);
   width: min(60rem, 100%); /** Utilizar el valor más pequeño **/
-  margin: 0 auto;
+  margin: 5rem auto;
   padding: 2rem;
   border-radius: 1rem;
 }
