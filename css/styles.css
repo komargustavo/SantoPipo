@@ -29,11 +29,7 @@ html {
 body {
   font-size: 16px; /* 1rem = 10px */
   font-family: "Roboto", sans-serif;
-  background-image: linear-gradient(
-    to top,
-    var(--grisClaro) 0%,
-    var(--blanco) 100%
-  );
+  background-color: var(--grisClaro);
 }
 .contenedor {
   max-width: 80rem;
@@ -126,10 +122,10 @@ h3 {
 .navegacion-principal a {
   display: block;
   text-align: center;
-  color: var(--blanco);
+  color: var(--oscuro);
   text-decoration: none;
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 400;
   padding: 1rem 5rem;
   border-radius: 10px;
   /* transition: ease-in, 1s; */
@@ -171,13 +167,13 @@ h3 {
   justify-content: center;
 }
 .contenido-hero h1 {
-  line-height: 5rem;
+  line-height: 4rem;
   color: var(--naranja);
   font-weight: 200;
   font-family: "Cinzel Decorative", serif;
 }
 .contenido-hero h1 span {
-  font-weight: 700;
+  font-weight: 500;
 }
 @media (min-width: 768px) {
   .contenido-hero h1 {
@@ -188,7 +184,7 @@ h3 {
     font-family: "Cinzel Decorative", serif;
   }
   .contenido-hero h1 span {
-    font-weight: 700;
+    font-weight: 400;
   }
   .contenido-hero p {
     font-size: 2rem;
@@ -254,9 +250,9 @@ justify-content: center;
 
 imagen-principal{
   position: absolute;
-width:  100%;
-  max-height: 100%;
-  }
+  width:100vb;
+  height: 100vh;;
+}
 
 .formulario {
   position:absolute;
@@ -264,7 +260,7 @@ width:  100%;
   width: min(60rem, 100%); /** Utilizar el valor más pequeño **/
   margin: 5rem auto;
   padding: 2rem;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
 }
 
 .formulario fieldset {
@@ -272,9 +268,9 @@ width:  100%;
 }
 .formulario legend {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 2rem;
   color: var(--primario);
 }
@@ -308,8 +304,8 @@ width:  100%;
 .input-text {
   width: 100%;
   border: none;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
+  padding: 1rem;
+  /* border-radius: 0.5rem; */
 }
 
 /** Footer **/
