@@ -11,7 +11,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box; /* Hack para Box Model **/
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
 }
 /** Scroll Snap**/
 .servicios,
@@ -29,6 +29,9 @@ html {
 body {
   font-size: 16px; /* 1rem = 10px */
   font-family: "Roboto", sans-serif;
+  background-image: url(../img/beige-cow-leather-textured-background.jpg);
+  background-repeat: no-repeat;
+  background-position: cover cover;
   background-color: var(--grisClaro);
 }
 .contenedor {
@@ -39,7 +42,7 @@ body {
   background-color: var(--secundario);
   color: var(--blanco);
   padding: 1rem 3rem;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   font-size: 2rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -52,6 +55,7 @@ body {
 
 @media (min-width: 768px) {
   .boton {
+    margin-top: 3rem;
     width: auto;
   }
 }
@@ -144,7 +148,7 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.posicion{
+.posicion {
   height: 100vh;
   position: relative;
   /* margin-bottom: 2rem; */
@@ -152,7 +156,7 @@ h3 {
 
 .logo {
   position: absolute;
-  top: 8px;
+  top: 4px;
   left: 5%;
 }
 .contenido-hero {
@@ -184,14 +188,13 @@ h3 {
     font-family: "Cinzel Decorative", serif;
   }
   .contenido-hero h1 span {
-    font-weight: 400;
+    font-weight: 600;
   }
   .contenido-hero p {
     font-size: 2rem;
     line-height: 3rem;
     color: var(--blanco);
   }
-  
 }
 
 .contenido-hero p {
@@ -209,25 +212,39 @@ h3 {
 }
 
 /** Servicios **/
+
+.serv-titulo {
+  margin-top: 2rem;
+  font-size: 4rem;
+  color: var(--naranja);
+}
+
 @media (min-width: 768px) {
   .servicios {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 1rem;
+    column-gap: 2rem;
   }
+  .serv-titulo {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 5rem;
+  text-transform: uppercase;
 }
 
+}
 .servicio {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .servicio h3 {
-  color: var(--secundario);
+  color: var(--naranja);
   font-weight: normal;
 }
 .servicio p {
   line-height: 2;
+  font-weight: bold;
   text-align: center;
 }
 .servicio .iconos {
@@ -241,24 +258,28 @@ h3 {
 }
 
 /** Contacto **/
-.seccion{
-position: relative;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+.seccion {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-imagen-principal{
+/* imagen-principal {
+  align-items: center;
+  margin-top: 2rem;
   position: absolute;
-  width:100vb;
-  height: 100vh;;
-}
+  width: 100vb;
+  height: 100vh;
+} */
 
 .formulario {
-  position:absolute;
+  position: absolute;
+  background-image: url(../img/Artesania_8.jpg);
+  background-position: center;
   background-color: rgb(0 0 0 / 30%);
-  width: min(60rem, 100%); /** Utilizar el valor más pequeño **/
-  margin: 5rem auto;
+  width: min(90rem, 100%); /** Utilizar el valor más pequeño **/
+  margin: 1rem auto;
   padding: 2rem;
   /* border-radius: 1rem; */
 }
@@ -268,14 +289,24 @@ imagen-principal{
 }
 .formulario legend {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: bold;
   margin-bottom: 2rem;
-  color: var(--primario);
+  color: var(--naranja);
 }
 
 @media (min-width: 768px) {
+  .formulario {
+    margin: 3rem auto;
+    padding: 4rem;
+    /* border-radius: 1rem; */
+  }
+  .formulario legend {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+
   .contenedor-campos {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -305,6 +336,7 @@ imagen-principal{
   width: 100%;
   border: none;
   padding: 1rem;
+  resize: none;
   /* border-radius: 0.5rem; */
 }
 
