@@ -35,7 +35,7 @@ body {
   background-color: var(--grisClaro);
 }
 .contenedor {
-  max-width: 80rem;
+  max-width: 100rem;
   margin: 0 auto;
 }
 .boton {
@@ -238,9 +238,9 @@ h3 {
   flex-direction: column;
   align-items: center;
 }
-.servicio h3 {
-  color: var(--naranja);
-  font-weight: normal;
+.servicio h2 {
+  text-transform: uppercase;
+2  font-weight: normal;
 }
 .servicio p {
   line-height: 2;
