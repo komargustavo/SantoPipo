@@ -4,7 +4,7 @@
   --primario: #ffc107;
   --secundario: #f7900931;
   --gris: #757575;
-  --grisClaro: #f3e9df3d;
+  --grisClaro: #f3e9dfac;
   --naranja: #ff8104;
 }
 /*  Globales **/
@@ -32,7 +32,6 @@ body {
   background-image: url(../img/beige-cow-leather-textured-background.jpg);
   background-repeat: no-repeat;
   background-position: cover cover;
-  background-color: var(--grisClaro);
 }
 .contenedor {
   max-width: 90rem;
@@ -121,6 +120,9 @@ h3 {
     flex-direction: row;
     justify-content: space-between;
   }
+  .navegacion-principal a {
+    font-weight: 400;
+  }
 }
 
 .navegacion-principal a {
@@ -207,7 +209,7 @@ h3 {
 
 @media (min-width: 768px) {
   .contenido-hero {
-    height: 90%;
+    height: 85%;
   }
 }
 
