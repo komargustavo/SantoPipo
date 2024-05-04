@@ -29,9 +29,9 @@ html {
 body {
   font-size: 16px; /* 1rem = 10px */
   font-family: "Roboto", sans-serif;
-  background-image: url(../img/beige-cow-leather-textured-background.jpg);
+  background-image: url(../img/fondo-textura-cuero-fino-blanco.jpg);
   background-repeat: no-repeat;
-  background-position: cover cover;
+  background-position: center;
 }
 .contenedor {
   max-width: 90rem;
@@ -147,6 +147,7 @@ h3 {
 /* Hero */
 .hero {
   background-image: url(../img/Taller-de-orfebre.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
