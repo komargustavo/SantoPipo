@@ -32,6 +32,9 @@ body {
   background-image: url(../img/fondo-textura-cuero-fino-blanco.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 .contenedor {
   max-width: 90rem;
@@ -84,6 +87,10 @@ h2,
 h3 {
   text-align: center;
 }
+img {
+  max-width: 200%;
+}
+
 /* li {
   display: list-item;
   text-align: -webkit-match-parent;
@@ -306,6 +313,7 @@ contacto-informe {
 }
 @media (min-width: 768px) {
   .seccion {
+    /* text-align: center; */
     max-width: 120rem;
     margin: 0 auto;
     display: grid;
@@ -321,7 +329,11 @@ contacto-informe {
   }
 
   .informe {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    color: var(--oscuro);
+  }
+  .informe i {
+    font-size: 3.5rem;
     color: var(--oscuro);
   }
 
@@ -362,12 +374,18 @@ contacto-informe {
   resize: none;
   /* border-radius: 0.5rem; */
 }
+.footer {
+  background-color: var(--oscuro);
+  color: var(--blanco);
+  margin-top: auto;
+}
 
 /** Footer **/
 @media (min-width: 768px) {
   .footer {
     background-color: var(--oscuro);
     color: var(--blanco);
+    margin-top: auto;
   }
   .contenedor-footer {
     max-width: 120rem;
@@ -391,8 +409,8 @@ contacto-informe {
     align-items: center;
   }
   .redes {
-    padding: 1.5%;
-    font-size: 3rem;
+    padding: 1rem;
+    font-size: 3.5rem;
   }
   .contenedor-info {
     margin-top: 1rem;
@@ -416,5 +434,28 @@ contacto-informe {
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
+  }
+}
+
+
+.elemento {
+  text-align: center;
+  max-width: 50%;
+}
+
+.elemento:hover {
+  transform: scale(1.1);
+  transition: all .3s ease-in-out;
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .grilla {
+      grid-template-columns: repeat(4, 2fr);
   }
 }
