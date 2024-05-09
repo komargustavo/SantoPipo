@@ -91,12 +91,14 @@ h3 {
   text-align: center;
 }
 
-/* li {
-  display: list-item;
-  text-align: -webkit-match-parent;
-  unicode-bidi: isolate;
-} */
-
+li {
+  list-style: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+li span{
+  font-weight: bold;
+}
 /* Titulos */
 .titulo span {
   font-size: 2rem;
@@ -423,6 +425,10 @@ h3 {
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
+  }
+  .grupo p{
+    font-size: 1.5rem;
+    text-transform: uppercase;
   }
 }
 
