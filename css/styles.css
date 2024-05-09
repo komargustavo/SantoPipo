@@ -71,6 +71,9 @@ body {
   padding: 2rem;
   border-radius: 1rem;
 }
+img {
+  max-width: 200%;
+}
 
 /* Tipografia */
 h1 {
@@ -87,15 +90,13 @@ h2,
 h3 {
   text-align: center;
 }
-img {
-  max-width: 200%;
-}
 
 /* li {
   display: list-item;
   text-align: -webkit-match-parent;
   unicode-bidi: isolate;
 } */
+
 /* Titulos */
 .titulo span {
   font-size: 2rem;
@@ -116,6 +117,7 @@ img {
 .alinear-derecha {
   justify-content: flex-end;
 }
+
 /* Navegacion Principal */
 .nav-bg {
   padding: 25px;
@@ -144,8 +146,6 @@ img {
   font-size: 2rem;
   font-weight: 400;
   padding: 1rem 5rem;
-  /* border-radius: 10px; */
-  /* transition: ease-in, 1s; */
   transition: all 0.5s ease-in-out;
 }
 .navegacion-principal a:hover {
@@ -155,6 +155,7 @@ img {
 .contacto {
   background-color: var(--naranja);
 }
+
 /* Hero */
 .hero {
   background-image: url(../img/Taller-de-orfebre.jpg);
@@ -165,7 +166,6 @@ img {
 .posicion {
   height: 100vh;
   position: relative;
-  /* margin-bottom: 2rem; */
 }
 
 .logo {
@@ -226,7 +226,6 @@ img {
 }
 
 /** Servicios **/
-
 .serv-titulo {
   margin-top: 2rem;
   font-size: 4rem;
@@ -277,8 +276,7 @@ img {
   justify-content: center;
   gap: 1rem;
 }
-
-contacto-informe {
+.contacto-informe {
   max-width: 36ch;
   margin-top: 2rem;
 }
@@ -287,8 +285,6 @@ contacto-informe {
   font-size: 2rem;
   color: var(--oscuro);
 }
-
-
 .formulario {
   /* position: absolute; */
   grid-template-columns: 50%;
@@ -320,14 +316,11 @@ contacto-informe {
     grid-template-columns: 2fr 1fr;
     gap: 3rem;
   }
-
   .formulario,
   .contacto-informe {
     margin: 3rem auto;
     padding: 2rem;
-    /* border-radius: 1rem; */
   }
-
   .informe {
     font-size: 2rem;
     color: var(--oscuro);
@@ -336,12 +329,10 @@ contacto-informe {
     font-size: 3.5rem;
     color: var(--oscuro);
   }
-
   .formulario legend {
     margin-bottom: 1rem;
     font-size: 2.5rem;
   }
-
   .contenedor-campos {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -366,7 +357,6 @@ contacto-informe {
 .campo textarea {
   height: 20rem;
 }
-
 .input-text {
   width: 100%;
   border: none;
@@ -397,7 +387,6 @@ contacto-informe {
   .contenedor-redes {
     width: 50%;
     padding: 0 2rem;
-
   }
   .lista-redes {
     margin-top: 3rem;
@@ -437,23 +426,20 @@ contacto-informe {
   }
 }
 
-
+/** Galeria **/
 .elemento {
   text-align: center;
   max-width: 50%;
 }
-
 .elemento:hover {
   transform: scale(1.1);
   transition: all .3s ease-in-out;
 }
-
 .grilla {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   gap: 1rem;
 }
-
 @media (min-width: 768px) {
   .grilla {
       grid-template-columns: repeat(4, 2fr);
