@@ -72,7 +72,7 @@ body {
   border-radius: 1rem;
 }
 img {
-  max-width: 200%;
+  max-width: 100%;
 }
 
 /* Tipografia */
@@ -204,6 +204,10 @@ li span{
   align-items: center;
 }
 @media (min-width: 768px) {
+  img {
+    max-width:200%;
+  }
+  
   .contenido-hero h1 {
     font-size: 6rem;
     line-height: 7rem;
@@ -426,11 +430,10 @@ li span{
     justify-content: space-around;
     align-content: center;
   }
-  .grupo p{
-    font-size: 1.5rem;
-    text-transform: uppercase;
+table{
+  text-transform: uppercase;
+  border-collapse:var(--blanco);
   }
-}
 
 /** Galeria **/
 .elemento {
@@ -450,4 +453,5 @@ li span{
   .grilla {
       grid-template-columns: repeat(4, 2fr);
   }
+}
 }
