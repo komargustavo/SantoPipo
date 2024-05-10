@@ -29,9 +29,9 @@ html {
 body {
   font-size: 16px; /* 1rem = 10px */
   font-family: "Roboto", sans-serif;
-  background-image: url(../img/fondo-textura-cuero-fino-blanco.jpg);
+  /* background-image: url(../img/fondo-textura-cuero-fino-blanco.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -66,10 +66,11 @@ body {
 }
 
 .sombra {
-  box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.48);
+  box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.541);
   background-color: var(--blanco);
   padding: 2rem;
   border-radius: 1rem;
+  margin-bottom: 2rem;
 }
 img {
   max-width: 100%;
@@ -77,7 +78,7 @@ img {
 
 /* Tipografia */
 h1 {
-  font-size: 3.8rem;
+  font-size: 2.5rem;
 }
 h2 {
   font-size: 2.8rem;
@@ -96,7 +97,7 @@ li {
   font-size: 1rem;
   text-transform: uppercase;
 }
-li span{
+li span {
   font-weight: bold;
 }
 /* Titulos */
@@ -105,14 +106,6 @@ li span{
 }
 
 /** Utilidades **/
-.w-sm-100 {
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .w-sm-100 {
-    width: auto;
-  }
-}
 .flex {
   display: flex;
 }
@@ -205,9 +198,9 @@ li span{
 }
 @media (min-width: 768px) {
   img {
-    max-width:200%;
+    max-width: 200%;
   }
-  
+
   .contenido-hero h1 {
     font-size: 6rem;
     line-height: 7rem;
@@ -234,8 +227,9 @@ li span{
 /** Servicios **/
 .serv-titulo {
   margin-top: 2rem;
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: var(--naranja);
+  text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
@@ -247,8 +241,7 @@ li span{
   .serv-titulo {
     margin-top: 5rem;
     text-align: center;
-    font-size: 5rem;
-    text-transform: uppercase;
+    font-size: 3rem;
   }
 }
 .servicio {
@@ -280,19 +273,8 @@ li span{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
-}
-.contacto-informe {
-  max-width: 36ch;
-  margin-top: 2rem;
-}
-.informe {
-  margin: 2rem;
-  font-size: 2rem;
-  color: var(--oscuro);
 }
 .formulario {
-  /* position: absolute; */
   grid-template-columns: 50%;
   background-image: url(../img/Artesania_8.jpg);
   background-position: center;
@@ -315,17 +297,14 @@ li span{
 }
 @media (min-width: 768px) {
   .seccion {
-    /* text-align: center; */
     max-width: 120rem;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
   }
+
   .formulario,
   .contacto-informe {
-    margin: 3rem auto;
-    padding: 2rem;
+    margin: 2rem auto;
+    padding: 1rem;
   }
   .informe {
     font-size: 2rem;
@@ -370,59 +349,58 @@ li span{
   resize: none;
   /* border-radius: 0.5rem; */
 }
+
+/** Redes **/
+.contacto-informe {
+  max-width: 36ch;
+  margin-top: 2rem;
+}
+.informe {
+  margin: 2rem;
+  font-size: 2rem;
+  color: var(--oscuro);
+}
+
+.contenedor-redes {
+  width: 50%;
+  padding: 0 2rem;
+}
+.lista-redes {
+  margin-top: 3rem;
+  color: var(--blanco);
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-start;
+  gap: 3%;
+  align-items: center;
+}
+.redes {
+  padding: 1rem;
+  font-size: 3.5rem;
+}
+
+@media (min-width: 768px) {
+}
+
+/** Footer **/
 .footer {
   background-color: var(--oscuro);
   color: var(--blanco);
   margin-top: auto;
 }
+table {
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-collapse: var(--blanco);
+}
+.footer-bottom p {
+  font-size: 1.5rem;
+}
 
-/** Footer **/
 @media (min-width: 768px) {
-  .footer {
-    background-color: var(--oscuro);
-    color: var(--blanco);
-    margin-top: auto;
-  }
-  .contenedor-footer {
-    max-width: 120rem;
-    margin: 0 auto;
-  }
-  .footer-top {
-    display: flex;
-  }
   .contenedor-redes {
     width: 50%;
     padding: 0 2rem;
-  }
-  .lista-redes {
-    margin-top: 3rem;
-    color: var(--blanco);
-    display: flex;
-    list-style-type: none;
-    justify-content: flex-start;
-    gap: 3%;
-    align-items: center;
-  }
-  .redes {
-    padding: 1rem;
-    font-size: 3.5rem;
-  }
-  .contenedor-info {
-    margin-top: 1rem;
-    width: 50%;
-    padding-right: 2%;
-  }
-  .info-institucion-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
-    gap: 10%;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    font-size: 1.5rem;
-  }
-  .info-institucion-footer i {
-    font-size: 2.5rem;
   }
   .footer-bottom {
     display: flex;
@@ -430,29 +408,38 @@ li span{
     justify-content: space-around;
     align-content: center;
   }
-table{
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  border-collapse:var(--blanco);
-  }
 
+  table {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-collapse: var(--blanco);
+  }
+}
 /** Galeria **/
-.elemento {
+.texto-imagen {
+  padding: 0 2;
+  margin: 0;
   text-align: center;
-  max-width: 50%;
+  background-color: dimgrey;
 }
 .elemento:hover {
   transform: scale(1.1);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .grilla {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   gap: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .grilla {
-      grid-template-columns: repeat(4, 2fr);
+    grid-template-columns: repeat(4, 2fr);
+  }
+  .elemento {
+    align-items: center;
+    max-width: 50%;
   }
 }
-}
+
