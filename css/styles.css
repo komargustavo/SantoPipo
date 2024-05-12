@@ -192,6 +192,10 @@ li span {
   line-height: 2rem;
   color: var(--blanco);
 }
+.contenido-hero p span{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
 .contenido-hero .ubicacion {
   display: flex;
   align-items: center;
