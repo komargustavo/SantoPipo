@@ -29,9 +29,9 @@ html {
 body {
   font-size: 16px; /* 1rem = 10px */
   font-family: "Roboto", sans-serif;
-  /* background-image: url(../img/fondo-textura-cuero-fino-blanco.jpg);
+  background-image: url(../img/fondo-textura-cuero-fino-blanco.jpg);
   background-repeat: no-repeat;
-  background-position: center; */
+  background-position: center;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -162,6 +162,11 @@ li span {
   height: 100vh;
   position: relative;
 }
+.vjs-tech video {
+  margin-top: 2rem;
+  width: 100% !important;
+  height: auto !important;
+}
 
 .logo {
   position: absolute;
@@ -192,7 +197,7 @@ li span {
   line-height: 2rem;
   color: var(--blanco);
 }
-.contenido-hero p span{
+.contenido-hero p span {
   font-size: 2.5rem;
   font-weight: bold;
 }
@@ -203,6 +208,11 @@ li span {
 @media (min-width: 768px) {
   img {
     max-width: 200%;
+  }
+  .vjs-tech video {
+    margin-top: 2rem;
+    width: auto;
+    height: auto;
   }
 
   .contenido-hero h1 {
@@ -355,10 +365,6 @@ li span {
 }
 
 /** Redes **/
-.contacto-informe {
-  max-width: 36ch;
-  margin-top: 2rem;
-}
 .informe {
   margin: 2rem;
   font-size: 2rem;
@@ -402,10 +408,6 @@ table {
 }
 
 @media (min-width: 768px) {
-  .contenedor-redes {
-    width: 50%;
-    padding: 0 2rem;
-  }
   .footer-bottom {
     display: flex;
     flex-wrap: wrap;
@@ -420,6 +422,9 @@ table {
   }
 }
 /** Galeria **/
+.galeria{
+  background-image: none;
+}
 .texto-imagen {
   padding: 0 2;
   margin: 0;
@@ -446,4 +451,3 @@ table {
     max-width: 50%;
   }
 }
-
