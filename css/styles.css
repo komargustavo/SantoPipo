@@ -162,11 +162,6 @@ li span {
   height: 100vh;
   position: relative;
 }
-.vjs-tech video {
-  margin-top: 2rem;
-  width: 100% !important;
-  height: auto !important;
-}
 
 .logo {
   position: absolute;
@@ -208,11 +203,6 @@ li span {
 @media (min-width: 768px) {
   img {
     max-width: 200%;
-  }
-  .vjs-tech video {
-    margin-top: 2rem;
-    width: auto;
-    height: auto;
   }
 
   .contenido-hero h1 {
