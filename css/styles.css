@@ -210,7 +210,7 @@ li span {
     max-width: 200%;
   }
   .vjs-tech video {
-    margin-top: 2rem;
+    margin: 2rem 0;
     width: auto;
     height: auto;
   }
