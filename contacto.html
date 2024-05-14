@@ -35,44 +35,46 @@
 
     <main class="posicion">
         <section class="seccion">
-            <form class="formulario sombra">
+            <form class="formulario sombra " action="https://formsubmit.co/komargustavo@gmail.com" method="POST" >
                 <fieldset>
                     <legend>escribinos para solicitar presupuesto </legend>
 
                     <div class="contenedor-campos">
                         <div class="campo">
                             <label for="nombre">Nombre</label>
-                            <input id="nombre" class="input-text" type="text" placeholder="Nombre">
+                            <input id="nombre" class="input-text" type="text" placeholder="Nombre" name="nombre">
                         </div>
 
                         <div class="campo">
                             <label for="telefono">Teléfono</label>
-                            <input id="telefono" class="input-text" type="tel" placeholder="Teléfono">
+                            <input id="telefono" class="input-text" type="tel" placeholder="Teléfono" name="telefono">
                         </div>
 
                         <div class="campo">
                             <label for="email">Correo</label>
-                            <input id="email" class="input-text" type="email" placeholder="Email">
+                            <input id="email" class="input-text" type="email" placeholder="Email" name="mail">
                         </div>
 
                         <div class="campo">
                             <label for="mensaje">Mensaje</label>
-                            <textarea id="mensaje" class="input-text"></textarea>
+                            <textarea id="mensaje" class="input-text" name="texto"></textarea>
                         </div>
                     </div> <!-- .contenedor-campos -->
 
                     <div class="alinear-derecha flex">
                         <input class="boton w-sm-100" type="submit" value="Enviar">
                     </div>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                    <input type="hidden" name="_captcha" value="false">
                 </fieldset>
             </form>
             <div class="contacto-informe sombra">
                 <div class="informe">
-                    <i class="fa-solid fa-square-phone"   style="color: #000000;"></i>
+                    <i class="fa-solid fa-square-phone" style="color: #000000;"></i>
                     <div>Llamanos <br> 379-40000000</div>
                 </div>
                 <div class="informe">
-                    <i class="fa-brands fa-square-whatsapp"  style="color: #000000;"></i>
+                    <i class="fa-brands fa-square-whatsapp" style="color: #000000;"></i>
                     <div>Whatsapp <br> 54 9 379-40000000</div>
                 </div>
                 <div class="contenedor-redes ">
