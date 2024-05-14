@@ -247,13 +247,15 @@ li span {
 @media (min-width: 768px) {
   .servicios {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 3rem;
   }
   .serv-titulo {
     margin-top: 5rem;
     text-align: center;
     font-size: 3rem;
+    font-weight: bold;
+
   }
 }
 .servicio {
