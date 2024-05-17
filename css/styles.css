@@ -283,6 +283,10 @@ li span {
 }
 
 /** Contacto **/
+.posicion {
+  position: relative;
+}
+
 .seccion {
   display: flex;
   flex-wrap: wrap;
@@ -430,10 +434,13 @@ li span {
 }
 
 /** Footer **/
+
 .footer {
   background-color: var(--oscuro);
   color: var(--blanco);
   margin-top: auto;
+  padding: 1rem 0;
+
 }
 table {
   font-size: 1rem;
