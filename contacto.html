@@ -35,24 +35,24 @@
 
     <main>
         <section class="seccion">
-            <form class="formulario sombra ">
+            <form class="formulario sombra" action="/contacto" id="enviar-mail" method="post">
                 <fieldset>
                     <legend>escribinos para solicitar presupuesto </legend>
 
                     <div class="contenedor-campos">
                         <div class="campo">
                             <label for="nombre">Nombre</label>
-                            <input id="nombre" class="input-text" type="text" placeholder="Nombre" name="nombre">
+                            <input type="text" name="nombre" id="nombre" class="input-text"  placeholder="Nombre" autofocus>
                         </div>
 
                         <div class="campo">
                             <label for="telefono">Teléfono</label>
-                            <input id="telefono" class="input-text" type="tel" placeholder="Teléfono" name="telefono">
+                            <input type="tel" name="telefono" id="telefono" class="input-text"  placeholder="Teléfono" >
                         </div>
 
                         <div class="campo">
                             <label for="email">Correo</label>
-                            <input id="email" class="input-text" type="email" placeholder="Email" name="mail">
+                            <input type="email" name="mail" id="email" class="input-text"  placeholder="Email" >
                         </div>
 
                         <div class="campo">
@@ -62,7 +62,7 @@
                     </div> <!-- .contenedor-campos -->
 
                     <div class="alinear-derecha flex">
-                        <input class="boton w-sm-100" type="submit" value="Enviar">
+                        <input type="submit" value="Enviar" id="enviar" class="boton w-sm-100"  >
                     </div>
                 </fieldset>
             </form>
@@ -119,6 +119,11 @@
         </div>
         </div>
     </footer>
+
+
+    <!-- JavaScript  -->
+    <script src="./js/contacto.js"></script>
+
 </body>
 
 </html>
