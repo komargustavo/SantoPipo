@@ -230,6 +230,30 @@ li span {
     height: 85%;
   }
 }
+/** servicios **/
+.efecto-imagen {
+  width: 70%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.efecto-imagen img {
+  width: 10%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: all ease-in-out 0.5s;
+}
+
+.efecto-imagen img:hover {
+  width: 50%;
+}
+
+
 
 /** empresa **/
 .titulo {
@@ -414,8 +438,9 @@ li span {
   background-color: dimgrey;
 }
 .elemento:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
   transition: all 0.3s ease-in-out;
+  filter: grayscale(1);
 }
 .grilla {
   display: grid;
@@ -441,7 +466,6 @@ li span {
   color: var(--blanco);
   margin-top: auto;
   padding: 1rem 0;
-
 }
 table {
   font-size: 1rem;
