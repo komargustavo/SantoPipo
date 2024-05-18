@@ -24,7 +24,7 @@ function iniciarApp() {
 }
 
 function validarFormulario(e) {
-
+console.log(e)
     if (e.target.value.length > 0) {
         const error = document.querySelector('p.error');
         if (error) {
