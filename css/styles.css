@@ -519,6 +519,7 @@ table {
 .contenedor-serv {
   width: 1000px;
   margin: 0 auto;
+  margin-bottom: 5rem;
 }
 
 .container {
@@ -547,10 +548,11 @@ table {
 .container .card:hover .face.face1 {
   background: #6d2c01c9;
   transform: translateY(0px);
-  transition-duration: 0.5s;
+  transition-duration: 1s;
 }
 
 .container .card .face.face2 {
+  border-radius: 25px;
   position: relative;
   /* background: #fff; */
   display: flex;
@@ -564,4 +566,14 @@ table {
 
 .container .card:hover .face.face2 {
   transform: translateY(0);
+}
+
+.texto-card{
+  max-width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
 }
