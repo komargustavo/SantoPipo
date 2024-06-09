@@ -68,9 +68,9 @@ body {
 .sombra {
   margin: 0 1rem;
   box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.541);
+  border-radius: 1rem;
   background-color: var(--blanco);
   padding: 2rem;
-  border-radius: 1rem;
   margin-bottom: 2rem;
 }
 img {
@@ -258,7 +258,7 @@ li span {
     gap: 10px;
     margin-bottom: 2rem;
   }
-  
+
   .efecto-img img {
     width: 10%;
     height: 100%;
@@ -273,7 +273,6 @@ li span {
     border-radius: 10px;
     border: 1px solid white;
   }
-  
 }
 
 /** empresa **/
@@ -460,7 +459,7 @@ li span {
 }
 .elemento:hover {
   transform: scale(1.2);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .grilla {
   display: grid;
@@ -514,7 +513,6 @@ table {
   }
 }
 
-
 /* ***************************************************************** */
 .contenedor-serv {
   width: 1000px;
@@ -532,7 +530,7 @@ table {
   max-width: 50%;
   max-height: 50%;
 }
-.icon{
+.icon {
   display: flex;
 }
 .container .card .face.face1 {
@@ -568,7 +566,7 @@ table {
   transform: translateY(0);
 }
 
-.texto-card{
+.texto-card {
   max-width: 100%;
   display: flex;
   text-align: center;
@@ -576,4 +574,9 @@ table {
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.flecha {
+  color: #212121;
+  text-align: end;
 }
